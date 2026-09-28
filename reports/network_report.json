@@ -1,0 +1,76 @@
+{
+    "connectivity": {
+        "loopback": {
+            "host": "127.0.0.1",
+            "success": true,
+            "output": "\nPinging 127.0.0.1 with 32 bytes of data:\nReply from 127.0.0.1: bytes=32 time<1ms TTL=128\nReply from 127.0.0.1: bytes=32 time<1ms TTL=128\nReply from 127.0.0.1: bytes=32 time<1ms TTL=128\n\nPing statistics for 127.0.0.1:\n    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 0ms, Maximum = 0ms, Average = 0ms\n"
+        },
+        "gateway": {
+            "host": "192.168.1.1",
+            "success": false,
+            "output": "\nPinging 192.168.1.1 with 32 bytes of data:\nRequest timed out.\nRequest timed out.\nRequest timed out.\n\nPing statistics for 192.168.1.1:\n    Packets: Sent = 3, Received = 0, Lost = 3 (100% loss),\n"
+        },
+        "dns_google": {
+            "host": "8.8.8.8",
+            "success": true,
+            "output": "\nPinging 8.8.8.8 with 32 bytes of data:\nReply from 8.8.8.8: bytes=32 time=23ms TTL=113\nReply from 8.8.8.8: bytes=32 time=22ms TTL=113\nReply from 8.8.8.8: bytes=32 time=21ms TTL=113\n\nPing statistics for 8.8.8.8:\n    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 21ms, Maximum = 23ms, Average = 22ms\n"
+        },
+        "external_site": {
+            "host": "github.com",
+            "success": true,
+            "output": "\nPinging github.com [140.82.113.3] with 32 bytes of data:\nReply from 140.82.113.3: bytes=32 time=82ms TTL=46\nReply from 140.82.113.3: bytes=32 time=78ms TTL=46\nReply from 140.82.113.3: bytes=32 time=349ms TTL=46\n\nPing statistics for 140.82.113.3:\n    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 78ms, Maximum = 349ms, Average = 169ms\n"
+        }
+    },
+    "dns": {
+        "github": {
+            "host": "github.com",
+            "resolved_ip": "140.82.113.4",
+            "success": true
+        },
+        "google": {
+            "host": "google.com",
+            "resolved_ip": "142.251.215.238",
+            "success": true
+        },
+        "microsoft": {
+            "host": "microsoft.com",
+            "resolved_ip": "150.171.109.151",
+            "success": true
+        }
+    },
+    "ip_config": {
+        "success": true,
+        "output": "\nWindows IP Configuration\n\n   Host Name . . . . . . . . . . . . : cfox\n   Primary Dns Suffix  . . . . . . . : \n   Node Type . . . . . . . . . . . . : Hybrid\n   IP Routing Enabled. . . . . . . . : No\n   WINS Proxy Enabled. . . . . . . . : No\n\nUnknown adapter NordLynx:\n\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : NordLynx Tunnel\n   Physical Address. . . . . . . . . : \n   DHCP Enabled. . . . . . . . . . . : No\n   Autoconfiguration Enabled . . . . : Yes\n   Link-local IPv6 Address . . . . . : fe80::148a:9742:bab8:a5ba%36(Preferred) \n   IPv4 Address. . . . . . . . . . . : 10.5.0.2(Preferred) \n   Subnet Mask . . . . . . . . . . . : 255.255.0.0\n   Default Gateway . . . . . . . . . : \n   NetBIOS over Tcpip. . . . . . . . : Enabled\n\nUnknown adapter OpenVPN Data Channel Offload for NordVPN:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : OpenVPN Data Channel Offload\n   Physical Address. . . . . . . . . : \n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n\nWireless LAN adapter Local Area Connection* 1:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter\n   Physical Address. . . . . . . . . : 74-3A-F4-11-33-08\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n\nWireless LAN adapter Local Area Connection* 2:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2\n   Physical Address. . . . . . . . . : 76-3A-F4-11-33-07\n   DHCP Enabled. . . . . . . . . . . : No\n   Autoconfiguration Enabled . . . . : Yes\n\nWireless LAN adapter Wi-Fi:\n\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz\n   Physical Address. . . . . . . . . : 74-3A-F4-11-33-07\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n   IPv4 Address. . . . . . . . . . . : 192.168.0.42(Preferred) \n   Subnet Mask . . . . . . . . . . . : 255.255.255.0\n   Lease Obtained. . . . . . . . . . : Sunday, September 27, 2026 4:56:45 PM\n   Lease Expires . . . . . . . . . . : Wednesday, September 30, 2026 11:31:52 AM\n   Default Gateway . . . . . . . . . : 192.168.0.1\n   DHCP Server . . . . . . . . . . . : 192.168.0.1\n   DNS Servers . . . . . . . . . . . : 192.168.0.1\n   NetBIOS over Tcpip. . . . . . . . : Enabled\n\nEthernet adapter Ethernet:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Realtek PCIe GbE Family Controller\n   Physical Address. . . . . . . . . : E8-9C-25-1D-27-67\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n"
+    },
+    "ports": {
+        "http": {
+            "host": "8.8.8.8",
+            "port": 80,
+            "open": false
+        },
+        "https": {
+            "host": "8.8.8.8",
+            "port": 443,
+            "open": true
+        },
+        "dns": {
+            "host": "8.8.8.8",
+            "port": 53,
+            "open": true
+        },
+        "ssh": {
+            "host": "8.8.8.8",
+            "port": 22,
+            "open": false
+        },
+        "rdp": {
+            "host": "8.8.8.8",
+            "port": 3389,
+            "open": false
+        }
+    },
+    "fixes": [
+        "Check for APIPA (169.254.x.x) or missing gateway in IP configuration.",
+        "If APIPA detected, renew DHCP lease: ipconfig /release && ipconfig /renew"
+    ]
+}
