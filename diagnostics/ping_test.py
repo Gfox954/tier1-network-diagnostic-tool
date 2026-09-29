@@ -23,7 +23,7 @@ def ping(host):
 def run_ping_tests():
     tests = {}
     tests["loopback"] = ping("127.0.0.1")
-    tests["gateway"] = ping("192.168.1.1")  # adjust if your gateway is different
+    tests["gateway"] = ping("192.168.0.1")  # adjust if your gateway is different
     tests["dns_google"] = ping("8.8.8.8")
     tests["external_site"] = ping("github.com")
     return tests
